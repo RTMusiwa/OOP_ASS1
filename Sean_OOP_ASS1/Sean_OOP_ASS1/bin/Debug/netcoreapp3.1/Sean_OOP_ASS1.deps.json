@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Sean_OOP_ASS1/1.0.0": {
+        "runtime": {
+          "Sean_OOP_ASS1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sean_OOP_ASS1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
