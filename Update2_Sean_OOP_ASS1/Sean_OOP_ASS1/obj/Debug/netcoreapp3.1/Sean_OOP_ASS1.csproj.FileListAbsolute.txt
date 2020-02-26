@@ -1,0 +1,11 @@
+C:\Users\Meg\source\repos\Sean_OOP_ASS1\Sean_OOP_ASS1\obj\Debug\netcoreapp3.1\Sean_OOP_ASS1.csprojAssemblyReference.cache
+C:\Users\Meg\source\repos\Sean_OOP_ASS1\Sean_OOP_ASS1\obj\Debug\netcoreapp3.1\Sean_OOP_ASS1.AssemblyInfoInputs.cache
+C:\Users\Meg\source\repos\Sean_OOP_ASS1\Sean_OOP_ASS1\obj\Debug\netcoreapp3.1\Sean_OOP_ASS1.AssemblyInfo.cs
+C:\Users\Meg\source\repos\Sean_OOP_ASS1\Sean_OOP_ASS1\bin\Debug\netcoreapp3.1\Sean_OOP_ASS1.exe
+C:\Users\Meg\source\repos\Sean_OOP_ASS1\Sean_OOP_ASS1\bin\Debug\netcoreapp3.1\Sean_OOP_ASS1.deps.json
+C:\Users\Meg\source\repos\Sean_OOP_ASS1\Sean_OOP_ASS1\bin\Debug\netcoreapp3.1\Sean_OOP_ASS1.runtimeconfig.json
+C:\Users\Meg\source\repos\Sean_OOP_ASS1\Sean_OOP_ASS1\bin\Debug\netcoreapp3.1\Sean_OOP_ASS1.runtimeconfig.dev.json
+C:\Users\Meg\source\repos\Sean_OOP_ASS1\Sean_OOP_ASS1\bin\Debug\netcoreapp3.1\Sean_OOP_ASS1.dll
+C:\Users\Meg\source\repos\Sean_OOP_ASS1\Sean_OOP_ASS1\bin\Debug\netcoreapp3.1\Sean_OOP_ASS1.pdb
+C:\Users\Meg\source\repos\Sean_OOP_ASS1\Sean_OOP_ASS1\obj\Debug\netcoreapp3.1\Sean_OOP_ASS1.dll
+C:\Users\Meg\source\repos\Sean_OOP_ASS1\Sean_OOP_ASS1\obj\Debug\netcoreapp3.1\Sean_OOP_ASS1.pdb
