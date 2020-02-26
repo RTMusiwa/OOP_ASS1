@@ -40,7 +40,7 @@ namespace Sean_OOP_ASS1
 
             //Repeat program until user chooses not to
             bool Repeat = true;
-            while(Repeat == true)
+            while (Repeat == true)
             {
 
                 //PROGRAM DISPLAY START
@@ -52,7 +52,7 @@ namespace Sean_OOP_ASS1
                 votingRule = Convert.ToChar(Console.ReadLine());
                 votingRule = char.ToUpper(votingRule);
 
-                //Set Participating Countries
+                //Set Participating Countries and Count for Maths
                 foreach (var Country in CountryList)
                 {
                     if (countryRule == 'U')
@@ -124,23 +124,54 @@ namespace Sean_OOP_ASS1
                 }
 
                 //Calculate voting population for 'Yes'
-                float voteSum = 0.0f; //Variable for suming votes
+                float VoteSum = 0.0f; //Variable for suming votes for POPULATIONS
                 foreach (var Country in CountryList)
                 {
                     if (Country.Vote == 'Y' && Country.Participation == true)
                     {
                         Console.WriteLine(Country.Population);
-                        voteSum = Country.Population + voteSum;
+                        VoteSum = Country.Population + VoteSum;
                     }
                 }
-                voteSum = (float)Math.Ceiling(voteSum);
-                Console.WriteLine(voteSum);
+
+                //Clean up decimal addition result
+                if (VoteSum < 100)
+                {
+                    VoteSum = (float)Math.Ceiling(VoteSum);
+                    Console.WriteLine(VoteSum);
+                }
+                else
+                {
+                    VoteSum = (float)Math.Floor(VoteSum);
+                    Console.WriteLine(VoteSum);
+                }
+
+                //Member State 'Yes' vote sum
+                int MemberSum = 0;
+                foreach (var Country in CountryList)
+                {
+                    if (Country.Participation == true && Country.Vote == 'Y')
+                    {
+                        MemberSum++;
+                    }
+                }
+                Console.WriteLine($"\nCcount: {Ccount}\nMemberSum: {MemberSum}");
+                int MinimumMember = (Ccount / 100) * MemberSum;
+                Console.WriteLine($"\nMinimumMember: {MinimumMember}");
 
                 //Qualified Majority
-                if (votingRule == 'Q' && voteSum >= 55)
+                if (votingRule == 'Q')
                 {
-                    Console.WriteLine("APPROVED");
+                    if (MinimumMember >= 55 && VoteSum >= 65)
+                    {
+                        Console.WriteLine($"APPROVED\n\n Member States 'Yes' Percentage: {MinimumMember}%, required: 55%\n Population 'Yes' Percentage: {VoteSum}%, required: 65%");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"DECLINED\n\n Member States 'Yes' Percentage: {MinimumMember}%, required: 55%\n Population 'Yes' Percentage: {VoteSum}%, required: 65%");
+                    }
                 }
+
 
                 //Console.WriteLine(Sum);
 
@@ -153,16 +184,22 @@ namespace Sean_OOP_ASS1
                 //country iteration required for easy voting rule/countries participating
 
                 Repeat = false;
-
-                Console.WriteLine("\n\nDo you want to repeat the program? (Y/N)");
-                if(Console.ReadLine() == "Y")
+                char Response = 'x';
+                while(Repeat == false)
                 {
-                    Repeat = true;
+                    Console.WriteLine("\n\nDo you want to repeat the stanko program? (Y/N)");
+                    Response = Convert.ToChar(Console.ReadLine());
+                    Char.ToUpper(Response);
+                    if (Response == 'Y')
+                    {
+                        Repeat = true;
+                    }
+                    else if (Response == 'N')
+                    {
+                        break;
+                    }
                 }
-                else if(Console.ReadLine() == "N")
-                {
-                    break;
-                }
+                
             }
         }
     }
